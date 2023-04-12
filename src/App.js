@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+// import Pages from './PDF_TO_Flipbook/Sample';
+import Pages from './book1';
+import AudioPlayer from './Audio';
+import NavBar from './NavigationBar';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='Header'>
+        <NavBar />
+      </div>
+      <div className='player'>
+        <AudioPlayer />
+      </div>
+      <div className='book'>
+        <Pages />
+      </div>
     </div>
   );
 }
